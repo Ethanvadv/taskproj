@@ -1,0 +1,19 @@
+<section class="container">
+    <div class="header">
+        <h1>Gestionnaire de voyage</h1>
+        <p>Vous pourrez ajouter tous vos voyages, vos photos, vos destinations et prendre des notes.</p>
+    </div>
+    <div class="backgroud_ing">
+        <div class="buttons">
+            <button [routerLink]="'/inscription'">Inscription</button>
+            <button [routerLink]="'/login'" >Connexion</button>
+        </div>
+    </div>
+
+</section>
+
+<section>
+    <div>
+        <app-card [cardItem]="cardItem"></app-card>
+    </div>
+</section>

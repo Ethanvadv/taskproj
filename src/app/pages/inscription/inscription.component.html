@@ -1,0 +1,27 @@
+<section *ngIf="!InsciptionIsValide">
+    <div class="container">
+        <div class="label">
+            <label for="nom" > Nom :</label>
+            <input type="text" [(ngModel)]="user.nom">
+        </div>
+        
+        <div class="name-lastName">
+            <label for="nom" > Prénom :</label>
+            <input type="text" [(ngModel)]="user.prenom">
+        </div>
+
+        <label for="email" > Email :</label>
+        <input type="email" [(ngModel)]="user.email">
+
+        <label for="password" >Mot de Passe :</label>
+        <input type="password" [(ngModel)]="user.password">
+
+        <label for="passwordControl" >Mot de Passe :</label>
+        <input type="passwordControl" [(ngModel)]="user.passwordControl">
+
+
+        <button (click)="register()">S'inscrire</button>
+
+        <button routerLink="/login" >connection</button>
+    </div>
+</section>

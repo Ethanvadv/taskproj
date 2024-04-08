@@ -1,0 +1,14 @@
+<div class="card-container">
+    <div *ngFor="let item of cardItem" class="card">
+        <div class="card-image">
+            <!-- <img src="{{ item.img }}" alt="{{ item.titre }}"> -->
+            <img src="https://via.placeholder.com/50" alt="test">
+
+        </div>
+        <div class="card-content">
+            <h2>{{ item.titre }}</h2>
+            <p>{{ item.description }}</p>
+            <span class="date">{{ item.date }}</span>
+        </div>
+    </div>
+</div>

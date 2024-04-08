@@ -1,0 +1,39 @@
+.header {
+    background-color: rgb(254, 137, 0); 
+    padding: 20px; 
+    display: flex;
+    justify-content: space-between; 
+    .logo {
+        img {
+            width: 100px;
+            height: auto;
+        }
+    }
+
+    .nav-menu {
+        ul {
+            list-style: none; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                margin-right: 20px; 
+                &:last-child {
+                    margin-right: 0; 
+                }
+
+                a {
+                    text-decoration: none; 
+                    color: #fff; 
+                    transition: color 0.3s ease; 
+
+                    &:hover {
+                        color: #ff6600;
+                    }
+                }
+            }
+        }
+    }
+  
+}

@@ -1,0 +1,49 @@
+$color-jaune: rgba(244, 195, 48, 0.781);
+
+.container {
+    background-size: cover;
+    background-color: $color-jaune;
+    margin: 25px 100px;
+    padding: 40px 25px;
+    border-radius: 15px; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;// Ajout d'arrondi aux coins du conteneur
+}
+
+.header {
+    padding: 20px 0; // Augmentation de l'espacement
+    text-align: center;
+    
+    h1 {
+        font-size: 2.5rem; // Augmentation de la taille de la police
+        color: white;
+        margin-bottom: 10px; // Ajout de marge en bas
+    }
+    
+    p {
+        color: white;
+        font-size: 1.2rem; // Augmentation de la taille de la police
+    }
+}
+
+.backgroud_ing {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; // Augmentation de l'espacement du haut
+    
+    .buttons {
+        button {
+            margin: 0 10px; // Espacement entre les boutons
+            padding: 12px 20px; // Augmentation de l'espacement intérieur
+            border: none;
+            border-radius: 25px; // Augmentation du rayon de la bordure
+            font-size: 1.2rem; // Augmentation de la taille de la police
+            color: rgb(139, 69, 19);
+            background-color: rgb(231, 231, 231);
+            transition: all 0.3s ease; // Animation de transition
+            
+            &:hover {
+                background-color: lighten(rgb(231, 231, 231), 10%); // Changement de couleur au survol
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Capriola';
+    src: url('../src/app/font/Capriola-Regular.ttf') format('opentype');
+  }
+  
+  body {
+    background-color: rgb(224, 224, 224);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Capriola', sans-serif;
+    font-weight: bold;
+    // overflow: hidden;
+  }
+  

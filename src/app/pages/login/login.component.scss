@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top:5% ;
+    .backgroud_border{
+        border: 2px solid  black;
+        background-color: rgba(244, 195, 48, 0.781);
+        padding: 5% 5%;
+        .form-group{
+            padding: 25px 0;
+        }
+        label{
+            padding-right: 10px;
+        }
+    }
+}

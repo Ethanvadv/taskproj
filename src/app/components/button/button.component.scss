@@ -1,0 +1,30 @@
+$primary-color: #007bff; // Couleur bleue pour le bouton (modifiable selon vos préférences)
+
+
+$button-color: mix($primary-color, rgba(244, 195, 48, 0.781), 50%); // Mélanger la couleur primaire avec le fond pour obtenir une teinte contrastante
+
+// Mixin pour les boutons
+@mixin button-style {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($button-color, 10%);
+  }
+}
+
+button {
+    @include button-style;
+    background-color: $button-color; // Utilisation de la couleur de bouton calculée
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  button.router-link {
+    margin-top: 10px;
+    background-color: red;
+  }
